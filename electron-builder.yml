@@ -1,0 +1,17 @@
+{
+  "appId": "it.blinky.opencode-ui",
+  "productName": "OpenCode UI",
+  "directories": {
+    "output": "dist"
+  },
+  "files": [
+    "out/**"
+  ],
+  "win": {
+    "target": ["nsis"]
+  },
+  "nsis": {
+    "oneClick": true,
+    "deleteAppDataOnUninstall": false
+  }
+}

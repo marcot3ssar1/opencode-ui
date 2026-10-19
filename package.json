@@ -1,0 +1,51 @@
+{
+  "name": "opencode-ui",
+  "productName": "OpenCode UI",
+  "description": "Desktop cockpit for OpenCode - drive your AI coding team from one window.",
+  "version": "0.1.0",
+  "main": "out/main/index.js",
+  "license": "MIT",
+  "author": "marcot3ssar1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/marcot3ssar1/opencode-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marcot3ssar1/opencode-ui/issues"
+  },
+  "homepage": "https://github.com/marcot3ssar1/opencode-ui#readme",
+  "keywords": [
+    "opencode",
+    "electron",
+    "react",
+    "desktop",
+    "ai-agents",
+    "developer-tools",
+    "cli",
+    "tui"
+  ],
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "typecheck": "tsc --noEmit -p tsconfig.node.json && tsc --noEmit -p tsconfig.web.json",
+    "dist": "npm run build && electron-builder",
+    "dist:dir": "npm run build && electron-builder --dir"
+  },
+  "dependencies": {
+    "@opencode/client": "2.0.32",
+    "json5": "^2.2.3",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "electron": "^44.9.0",
+    "electron-builder": "^26.15.3",
+    "electron-vite": "^6.0.0",
+    "typescript": "^5.9.0"
+  }
+}
